@@ -7,8 +7,6 @@ import matplotlib.pyplot as plt
 import pickle
 import numpy as np
 
-graph = tf.get_default_graph()
-
 import warnings
 warnings.filterwarnings("ignore")
 
@@ -59,13 +57,12 @@ def predict_caption(photo):
     for i in range(max_len):
         sequence = [word_to_idx[w] for w in in_text.split() if w in word_to_idx]
         sequence = pad_sequences([sequence], maxlen=max_len, padding='post')
-        with graph.as_default():
-         ypred =  model.predict([photo,sequence])
-         ypred = ypred.argmax()
-         word = idx_to_word[ypred]
-         in_text+= ' ' +word
+        ypred =  model.predict([photo,sequence])
+        ypred = ypred.argmax()
+        word = idx_to_word[ypred]
+        in_text+= ' ' +word
 
-         if word =='endseq':
+        if word =='endseq':
              break
 
 
