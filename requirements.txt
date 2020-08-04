@@ -10,6 +10,7 @@ certifi==2019.6.16
 chardet==3.0.4
 click==7.1.2
 colorama==0.4.3
+cycler==0.10.0
 Cython==0.29.13
 decorator==4.4.0
 defusedxml==0.6.0
@@ -44,11 +45,14 @@ jupyter-core==4.5.0
 Keras==2.2.4
 Keras-Applications==1.0.8
 Keras-Preprocessing==1.1.0
+kiwisolver==1.2.0
 Markdown==3.1.1
 MarkupSafe==1.1.1
+matplotlib==3.3.0
 mistune==0.8.4
 nbconvert==5.6.1
 nbformat==5.0.7
+nltk==3.5
 notebook==5.7.8
 numpy==1.17.0
 oauthlib==3.1.0
@@ -58,6 +62,7 @@ pandocfilters==1.4.2
 parso==0.7.1
 pexpect==4.8.0
 pickleshare==0.7.5
+Pillow==7.2.0
 prometheus-client==0.8.0
 prompt-toolkit==2.0.10
 protobuf==3.12.4
